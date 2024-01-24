@@ -22,6 +22,7 @@ body
 #home{
     width: 100%;
     min-height:100vh;
+    height: auto;
     }
 #particles-js{
     width: 100%;
@@ -44,15 +45,18 @@ body
     text-align: right;
     }
 #prop {
-      width: 25rem;
-      height: 25rem;
+      width:100%;
+      max-width: 55%;
+      height: auto;
+
 
       border: 5px solid #365486; /* Add a 5px solid border with color #444 */
       animation: morph 8s linear infinite;
       border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
       position: absolute;
-      right:2rem;
-      top: 13rem;
+      right: 20%;
+
+      top: 12rem;
       overflow: hidden;
       margin: auto;
       transition: all 1s ease-in-out;
@@ -60,6 +64,7 @@ body
 #prop img{
         width: 100%;
         height: 100%;
+
         object-fit: cover; /* Maintain aspect ratio while covering the container */
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 
@@ -78,8 +83,13 @@ body
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
       }
     }
+    @media (max-width: 768px) {
+    #prop {
+    right:1;
+    top: 2rem;
 
-
+    }
+    }
 
 #learn-more{
     padding: 0.4rem;
